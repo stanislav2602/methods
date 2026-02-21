@@ -17,7 +17,7 @@ export default class Character {
 
   levelUp() {
     if (this.health <= 0) {
-      throw new Error('you cant level up a dead character');
+      throw new Error('нельзя повысить левел умершего');
     }
 
     this.level += 1;

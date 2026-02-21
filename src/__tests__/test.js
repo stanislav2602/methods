@@ -52,14 +52,14 @@ describe('levelUp method', () => {
     const character = new Bowerman('Test');
     character.health = 0;
 
-    expect(() => character.levelUp()).toThrow('you cant level up a dead character');
+    expect(() => character.levelUp()).toThrow('нельзя повысить левел умершего');
   });
 
   test('should throw error if health < 0', () => {
     const character = new Bowerman('Test');
     character.health = -10;
 
-    expect(() => character.levelUp()).toThrow('you cant level up a dead character');
+    expect(() => character.levelUp()).toThrow('нельзя повысить левел умершего');
   });
 });
 
